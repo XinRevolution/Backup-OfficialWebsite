@@ -1,0 +1,235 @@
+@import 'mixin.scss';
+
+// fire-character
+
+.character {
+    position: relative;
+    // height: 100vh;
+    // width: 100vw;
+
+    .font {
+        margin: 4% auto auto 20%;
+    }
+
+    .back {
+        margin: auto auto auto 5%;
+    }
+
+    .font,
+    .back {
+        display: inline-block;
+        position: absolute;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 45vw;
+
+        img {
+            position: relative;
+            display: inline-block;
+            opacity: 0.5;
+            z-index: 1;
+            // cursor: pointer;
+        }
+
+        &.active {
+            width: 48vw;
+
+            img {
+
+                display: inline-block;
+                opacity: 1;
+                z-index: 99;
+            }
+        }
+    }
+
+    // 背景平行四邊形
+    &:after {
+        content: "";
+        width: 25rem;
+        height: calc(100vh + 40px);
+        background: #FFBBA2;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 0;
+        margin: calc(-0.5rem - 40px) auto auto 20%;
+        transform: skew(-45deg);
+        z-index: -1;
+    }
+}
+
+
+.charactersBg {
+    background: url("/images/concept02.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    @extend .fullScreenBg;
+
+}
+
+// 時間軸-季
+.seasonDiv {
+    background: $black;
+    @extend .fullScreenBg;
+}
+
+.seasonInfo {
+    position: relative;
+    top: 50%;
+
+    .title,
+    p {
+        color: #fff;
+    }
+
+}
+
+
+// 焰世代-時間軸
+
+.storyDiv {
+    @include transition(all, 0.4s, ease, 0s);
+    background: $black;
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+
+    //    Img
+    .storyImg {
+        width: 7rem;
+        height: 100%;
+        background: #4EB5C7;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        float: left;
+
+        img {
+            position: absolute;
+            width: 53rem;
+            max-width: max-content;
+            height: auto;
+            bottom: 0;
+            left: -13rem;
+        }
+    }
+
+    //    內容
+    .storyContent {
+        display: inline-block;
+        vertical-align: top;
+        color: #fff;
+        width: calc(100% - 7.5rem);
+        float: left;
+        margin-left: 0.5rem;
+
+        .title {
+            font-family: 'Homenaje';
+            position: relative;
+            font-size: 6rem;
+            text-align: center;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                bottom: 0;
+                left: 0;
+                background: #fff;
+            }
+        }
+    }
+
+    table {
+        margin: auto;
+
+        tr {
+            td {
+                // border: 1px solid #fff;
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+
+            //  時間線
+            &:nth-child(even) {
+                td {
+                    overflow: hidden;
+
+                }
+
+                &:nth-child(2) {
+
+                    .node-line {
+                        transform: rotate(-35deg);
+                    }
+                }
+
+                &:nth-child(4) {
+
+                    .node-line {
+                        transform: rotate(50deg);
+                    }
+                }
+
+                &:nth-child(6) {
+
+                    .node-line {
+                        transform: rotate(-20deg);
+                    }
+                }
+            }
+
+        }
+    }
+
+    // 展開狀態
+    &.expend {
+        padding: 0;
+
+        .storyContent {
+            display: block;
+            vertical-align: top;
+            color: #fff;
+            width: 100%;
+            float: left;
+            margin: auto;
+            margin-top: 20%;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .storyImg {
+            width: 15rem;
+            display: block;
+            margin: auto;
+            float: none;
+        }
+    }
+}
+
+// 世界觀
+
+.leftHand {
+    background: url(/images/L-hand.png);
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.rightHand {
+    background: url(/images/R-hand.png);
+    background-size: cover;
+    height: 100vh;
+
+}

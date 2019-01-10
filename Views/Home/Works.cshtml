@@ -1,0 +1,94 @@
+<style>
+    .workList {
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        position: absolute;
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .workList::-webkit-scrollbar {
+        display: none
+    }
+
+    .customSlick {
+        margin-right: 0;
+        width: 100%;
+    }
+</style>
+
+<!-- WORKS -->
+<div class="grid-container h100 relative js-block-mousewheel" id="testBlock">
+    <!-- 導覽區 -->
+    <div  class="sign">
+        <nav>
+            <a class="prev" asp-controller="Home" asp-action="Index">PREV</a>
+            <a class="next" asp-controller="Home" asp-action="Issues">NEXT</a>
+        </nav>
+        <div class="now">Works</div>
+    </div>
+
+    <h2 class="theme">WORKS</h2>
+    <!-- <div class="bgBlock horizontal"></div> -->
+
+    <div class="workList">
+        <div class="workDiv">
+            <a asp-controller="FireGeneration" asp-action="Intro" style="display:block;">
+                <div>
+                    <div class="workImg"><img src="/images/concept.jpg" alt=""></div>
+                    <div class="workContent">
+                        <div class="rectangleTitle">焰世代-1</div>
+                        <div class="info">散落在世界的少年們自詡為"焰世代"，他們對抗的是以隱喻的方式呈現的現實中難解的矛盾，故事背景結合時事及議題並融合臺灣神話，藉議題不同立場來刻畫故事的衝突，由角色在衝突中展現勇氣與叛逆，帶給大眾正向的力量及對議題的反思。</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="workDiv">
+            <a asp-controller="FireGeneration" asp-action="Intro" style="display:block;">
+                <div>
+                    <div class="workImg"><img src="/images/concept.jpg" alt=""></div>
+                    <div class="workContent">
+                        <div class="rectangleTitle">焰世代-1</div>
+                        <div class="info">散落在世界的少年們自詡為"焰世代"，他們對抗的是以隱喻的方式呈現的現實中難解的矛盾，故事背景結合時事及議題並融合臺灣神話，藉議題不同立場來刻畫故事的衝突，由角色在衝突中展現勇氣與叛逆，帶給大眾正向的力量及對議題的反思。</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="workDiv">
+            <a asp-controller="FireGeneration" asp-action="Intro" style="display:block;">
+                <div>
+                    <div class="workImg"><img src="/images/concept.jpg" alt=""></div>
+                    <div class="workContent">
+                        <div class="rectangleTitle">焰世代-1</div>
+                        <div class="info">散落在世界的少年們自詡為"焰世代"，他們對抗的是以隱喻的方式呈現的現實中難解的矛盾，故事背景結合時事及議題並融合臺灣神話，藉議題不同立場來刻畫故事的衝突，由角色在衝突中展現勇氣與叛逆，帶給大眾正向的力量及對議題的反思。</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="workDiv">
+            <a asp-controller="FireGeneration" asp-action="Intro" style="display:block;">
+                <div>
+                    <div class="workImg"><img src="/images/concept.jpg" alt=""></div>
+                    <div class="workContent">
+                        <div class="rectangleTitle">焰世代-1</div>
+                        <div class="info">散落在世界的少年們自詡為"焰世代"，他們對抗的是以隱喻的方式呈現的現實中難解的矛盾，故事背景結合時事及議題並融合臺灣神話，藉議題不同立場來刻畫故事的衝突，由角色在衝突中展現勇氣與叛逆，帶給大眾正向的力量及對議題的反思。</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Styles{
+<link rel="stylesheet" href="~/css/slick.css" />
+<link rel="stylesheet" href="~/css/slick-theme.css" />
+}
+
+@section Scripts{
+<script src="~/js/lib/jquery-mousewheel.js"></script>
+<script src="~/js/lib/slick.js"></script>
+<script src="~/js/Work.js"></script>
+}

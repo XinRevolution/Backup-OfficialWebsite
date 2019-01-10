@@ -1,0 +1,169 @@
+@import 'mixin.scss';
+
+//news
+.newsImg {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+
+    img {
+        height: 100%;
+    }
+}
+
+.newsContent {
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+.newsDiv {
+    @include transition(all, 0.4s, ease, 0s);
+    background: rgba(0, 0, 0, 0.5);
+    height: calc((100% - 1rem) / 3);
+    margin-bottom: 0.5rem;
+    // padding: 0.5rem;
+    // margin: 0 1rem 0.5rem 1rem;
+    // width: calc(100% - 2rem);
+    position: relative;
+    overflow: hidden;
+
+    &.refresh:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        top: 0;
+        background: black;
+        -webkit-animation: a-refresh $sec ease reverse;
+        /* Safari 4.0 - 8.0 */
+        animation: a-refresh $sec ease reverse;
+
+    }
+
+    .newsImg {
+        @include transition(all, 0.4s, ease, 0s);
+        width: 30rem;
+        height: 100%;
+        display: inline-block;
+        opacity: 1;
+        background: $black;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .newsContent {
+        width: calc(100% - 30rem);
+        display: inline-block;
+        padding:0.5rem;
+    }
+
+    fieldset {
+        min-height: calc(100% - (20px + 0.5rem));
+        height: auto;
+        position: relative;
+        line-height: normal;
+        .news {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .media {
+            position: absolute;
+            bottom: 0;
+
+          
+        }
+    }
+
+    .btn {
+        display: inline-block;
+        width: 5rem;
+        float: right;
+        margin-top: 0.5rem;
+    }
+
+    &.news-active {
+        min-height: calc((100% - 0.5rem) / 2);
+        height: auto;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: -100%;
+            top: 0;
+            background: black;
+            -webkit-animation: a-refresh $sec ease;
+            /* Safari 4.0 - 8.0 */
+            animation: a-refresh $sec ease;
+
+        }
+
+        .newsContent {
+            width: 100%;
+            display: inline-block;
+            padding: 0.5rem;
+            float: left;
+        }
+
+        .news {
+            overflow: initial;
+            text-overflow: initial;
+            display: block;
+            -webkit-line-clamp: initial;
+            -webkit-box-orient: initial;
+        }
+
+        .newsImg {
+            display: none;
+        }
+
+    }
+}
+
+
+
+.dateDiv {
+  @extend .border;
+    height: calc((100% - 0.5rem) / 2);
+
+}
+
+.paper {
+    position: relative;
+    background: #fff;
+    // background: radial-gradient(circle at 50% 15%,rgba(255, 232, 190, 0.5),rgba(146, 143, 143, 0.5));
+    overflow: auto;
+    padding: 1rem 0;
+    box-shadow: 4px 5px 20px #6f6f6f78;
+
+}
+
+
+.test2 {
+    position: fixed;
+    height: 90%;
+    right: 0;
+    width: 50%;
+    bottom: 0;
+    background: url(/images/free_set04.png)no-repeat;
+    background-size: cover;
+    background-position: 8% 7rem;
+}
+
+.z999 {
+    position: relative;
+    z-index: 999;
+}

@@ -1,0 +1,152 @@
+@import 'mixin.scss';
+
+// btn
+
+.btn {
+    color: #fff;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    // &.borderTop {
+    //     border-top: 1px solid #d8d8d8;
+    // }
+    //    &.borderBottom {
+    //         border-bottom: 1px solid #d8d8d8;
+    //     }
+
+    &[class*="icon-"] {
+        @include transition;
+        font-size: 20px;
+        margin: 0 0.4rem;
+        color: #fff;
+
+        &:hover {
+            color: $black;
+            background: $hoverWhite;
+        }
+
+    }
+
+    // 方形按鈕
+    &.btnSquare {
+        width: 100%;
+
+        &:before {
+            @include transition;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            display: inline-block;
+            margin: 0 0.3rem;
+            // position: absolute;
+        }
+
+        &:hover,
+        &:active {
+            background: $hoverWhite;
+            color: #000;
+
+            &:before {
+                content: '';
+                // width: 100px;
+                background: #000;
+            }
+        }
+
+        &.gray {
+            background: rgba(0, 0, 0, 0.5);
+
+            &:hover,
+            &:active {
+                background: $gray-light;
+                color: #000;
+
+            }
+        }
+    }
+
+    //date
+    &.date {
+        display: block;
+        color: $black;
+        border: 1px solid $gray-light;
+    }
+
+    // center
+    &.center {
+        text-align: center;
+    }
+
+    // 平行四邊形 header footer
+    &.leftTop,
+    &.rightTop,
+    &.leftBottom,
+    &.rightBottom {
+        width: $width;
+        height: $height;
+        padding: 10px 0.5rem;
+        text-align: center;
+    }
+
+    &.leftTop,
+    &.rightTop {
+        vertical-align: top;
+    }
+
+    &.rightTop {
+        [class*="icon-"] {
+            color: $black;
+            &:hover {
+                color: $gray-light;
+         
+            }
+        }
+     
+// 右上梯形
+        // background: $black;
+        // &:before {
+        //     @include biseauMixin(0, $width, 0, auto,0 $angle $angle 0, transparent $black transparent transparent);
+        // }
+    }
+
+    &.leftTop {
+        position: relative;
+        padding: 0;
+        z-index: 2200;
+    }
+
+    &.leftBottom {
+        background: $black;
+        &:after {
+
+            @include biseauMixin(auto, auto, 0, $width, 0 $angle $angle 0, transparent transparent $black transparent);
+        }
+    }
+
+
+    &.rightBottom {
+        background: $black;
+        &:before {
+            @include biseauMixin(auto, $width, 0, auto, $angle $angle 0 0, transparent $black transparent transparent);
+        }
+    }
+// 十字按鈕
+&.plus{
+    z-index: 999;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: $black;
+    position: absolute;
+    left: 60%;
+    background: #fff;
+    -webkit-box-shadow: 4px 4px 7px 0px #0003;
+    box-shadow: 4px 4px 7px 0px #0003;
+
+}
+
+}

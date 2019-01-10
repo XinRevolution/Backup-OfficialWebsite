@@ -1,0 +1,128 @@
+<div class="js-ctrl-background" data-header="bright">
+</div>
+<!-- 時間軸 - 季 -->
+<!-- 全螢幕背景 -->
+<div class="seasonDiv">
+    <!-- 內容 -->
+    <div class="grid-container h100 relative">
+        <!-- 左側區塊 - 章節介紹圖 -->
+        <div class="storyDiv expend">
+            <div class="column-8 h100">
+                <div class="storyImg">
+                    <img class="" src="/images/Nn.png">
+                </div>
+            </div>
+
+            <!-- 中間區塊 -->
+            <div class="column-8 h100 contentDiv">
+                <!-- 標題-->
+                <div class="storyContent">
+                    <div class="title">01</div>
+                    <div class="subtitle">自由</div>
+                </div>
+
+                <!-- 時間線 -->
+                <div>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a class="node active" asp-controller="FireGeneration" asp-action="Chapter"
+                                    asp-route-id="1" style="display:block;"></a>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="3">
+                                <div class="node-line"></div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="node"></div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+
+                            <td colspan="4">
+                                <div class="node-line"></div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="node"></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2">
+                                <div class="node-line"></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="node"></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 右側區塊 -->
+            <div class="column-8 h100 contentDiv ">
+                <!-- 章節簡介區 -->
+                <div class="seasonInfo">
+                    <div class="title">尋找自我認同</div>
+                    <hr>
+                    <p>Cillum amet fugiat irure aute irure proident tempor ex. Ipsum incididunt qui est irure
+                        incididunt sit sit qui ipsum ut sit sit. Ad laboris culpa deserunt velit culpa occaecat
+                        Lorem do irure laborum adipisicing. Aliquip enim ad ut eu. Et reprehenderit eu nostrud eu.</p>
+                </div>
+            </div>
+
+            <!-- 返回按鈕 -->
+            <div>X</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 側邊導覽列 -->
+<partial name="_SideNavigation.cshtml" />
+
+@section Scripts {
+<script src="~/js/Work-FireGeneration.js"></script>
+}

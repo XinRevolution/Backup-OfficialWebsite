@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>XIN_REVOLUTION</title>
+    <link rel="stylesheet" href="~/css/hamburgers.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/sass/myScss.css" />
+    <!-- fonts- Libre Barcode 128 、Pathway Gothic One、Homenaje、Roboto、Noto Sans TC、Share Tech、Open Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Homenaje|Libre+Barcode+128|Noto+Sans+TC|Pathway+Gothic+One|Open+Sans:400,600i,700i,800i|Share+Tech|Share+Tech|Roboto&amp;subset=latin-ext"
+        rel="stylesheet">
+
+    <script src="~/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="~/js/Site.js"></script>
+
+    @RenderSection("Styles", required: false)
+</head>
+
+<body>
+    <!-- 轉場動畫 animation-horizontal animation-vertical-->
+    <div class='@ViewData["Preloader"]' id="block-preloader">XIN_REVOLUTION</div>
+
+    <header class="js-style-toggleable">
+        <!-- 操作區 -->
+        <div class="headerDiv">
+            <!-- 漢堡圖 -->
+            <div class="btn leftTop borderBottom">
+                <div class="hamburger hamburger--emphatic btn" id="btn-menu">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGO -->
+            <div class="logo">
+                <div class="index">
+                    <a asp-controller="Home" asp-action="Index" class="navbar-brand">
+                        <!-- <img src="~/images/X-logo.png" alt=""> -->
+                        <div class="xLogo"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 右邊連結 -->
+            <div class="btn borderBottom rightTop">
+                <a class="btn icon-account"></a>
+                <a class="btn icon-shopping-cart"></a>
+                <a class="btn icon-search"></a>
+            </div>
+        </div>
+
+        <!-- 導覽區 -->
+        <div class="menuDiv" id="block-menu">
+            <nav class="">
+                <div><a asp-controller="Home" asp-action="Index">Index</a></div>
+                <div><a asp-controller="Home" asp-action="News">News</a></div>
+                <div><a asp-controller="Home" asp-action="Works">Works</a></div>
+                <div><a asp-controller="Home" asp-action="Issues">Issues</a></div>
+                <!-- <div><a asp-controller="Home" asp-action="Store">Store</a></div> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- video-style -->
+    <section class="wrapper">
+        <div class="h100 relative">
+            <div class="content">
+                @RenderBody()
+            </div>
+            
+            <div class="js-style-toggleable">
+                <div class="topSight"></div>
+                <div class="bottomSight">
+                    <!-- circle-g -->
+                    <embed class="circle-g" src="/images/circle-g .svg" type="image/svg+xml" />
+                </div>
+                <div class="grid-container">
+                    <div class="crossDiv">
+                        <div class="column-6 "></div>
+                        <div class="column-6 "></div>
+                        <div class="column-6 "></div>
+                        <div class="column-6 "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="btn borderTop leftBottom">
+            <div class="btn btnSquare" id="btn-aboutUs-toggle">ABOUT_US</div>
+        </div>
+
+        <div class="right btn borderTop rightBottom">
+            <nav>
+                <a class="btn icon-twitter"></a>
+                <a class="btn icon-fb" href="https://www.facebook.com/XinRevo/" target="_blank"></a>
+                <a class="btn icon-ig"></a>
+            </nav>
+        </div>
+
+        <div class="footerDiv"></div>
+    </footer>
+
+    <!-- Popup -->
+    <div class="aboutUsDiv" id="block-aboutUs">
+        <div class="content">
+            <div class="aboutUsContent  grid-container"> About us content
+                <div class="" id="btn-aboutUs-close">關閉</div>
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

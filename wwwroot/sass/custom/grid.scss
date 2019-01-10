@@ -1,0 +1,8 @@
+@mixin produce-grid-model($arg){
+    @for $i from 1 through 12 {
+      .col-#{$arg}-#{$i} {
+          width: calc( 100% * #{$i} / 12 );
+      }
+    }
+  }
+  
