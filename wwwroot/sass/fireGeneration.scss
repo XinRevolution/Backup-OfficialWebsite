@@ -7,7 +7,7 @@
     // height: 100vh;
     // width: 100vw;
 
-    .font {
+    .front {
         margin: 4% auto auto 20%;
     }
 
@@ -15,7 +15,7 @@
         margin: auto auto auto 5%;
     }
 
-    .font,
+    .front,
     .back {
         display: inline-block;
         position: absolute;
@@ -61,6 +61,20 @@
         margin: calc(-0.5rem - 40px) auto auto 20%;
         transform: skew(-45deg);
         z-index: -1;
+    }
+                // 裝備按鈕
+    table {
+        margin: auto;
+
+        tr {
+            td {
+                border: 1px solid #000;
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+
+        }
     }
 }
 

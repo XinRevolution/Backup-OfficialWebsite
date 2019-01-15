@@ -21,7 +21,6 @@
 
 .border {
   border: 1px solid #d8d8d8;
-  padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -417,8 +416,6 @@
   height: 20px;
   text-align: center;
   color: #292929;
-  position: absolute;
-  left: 60%;
   background: #fff;
   -webkit-box-shadow: 4px 4px 7px 0px #0003;
   box-shadow: 4px 4px 7px 0px #0003;
