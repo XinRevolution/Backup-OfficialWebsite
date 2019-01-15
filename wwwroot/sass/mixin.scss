@@ -23,11 +23,10 @@ $hoverWhite: rgba(255, 255, 255, 0.8);
     transform: skew(-45deg);
   }
 }
-// 內容外框
+// 外框
 
 .border{
   border: 1px solid $gray-light;
-  padding: 0.5rem;
   margin-bottom:0.5rem ;
 }
 // 媒體區塊

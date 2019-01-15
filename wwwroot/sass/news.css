@@ -21,7 +21,6 @@
 
 .border, .dateDiv {
   border: 1px solid #d8d8d8;
-  padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -410,6 +409,7 @@
 }
 
 .dateDiv {
+  padding: 0.5rem;
   height: calc((100% - 0.5rem) / 2);
 }
 

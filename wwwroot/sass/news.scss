@@ -62,7 +62,7 @@
     .newsContent {
         width: calc(100% - 30rem);
         display: inline-block;
-        padding:0.5rem;
+        padding: 0.5rem;
     }
 
     fieldset {
@@ -70,6 +70,7 @@
         height: auto;
         position: relative;
         line-height: normal;
+
         .news {
             overflow: hidden;
             text-overflow: ellipsis;
@@ -82,7 +83,7 @@
             position: absolute;
             bottom: 0;
 
-          
+
         }
     }
 
@@ -136,7 +137,8 @@
 
 
 .dateDiv {
-  @extend .border;
+    @extend .border;
+    padding: 0.5rem;
     height: calc((100% - 0.5rem) / 2);
 
 }
