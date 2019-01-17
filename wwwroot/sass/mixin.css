@@ -278,7 +278,7 @@
 }
 
 .camera {
-  width: 200px;
+  width: 100%;
   height: 200px;
   -webkit-perspective-origin: center center;
           perspective-origin: center center;
@@ -303,6 +303,5 @@
   -ms-transition: all 0.4s ease 0s;
   -webkit-transform: translateX(50px) translateY(50px) rotateY(20deg);
           transform: translateX(50px) translateY(50px) rotateY(20deg);
-  background: rgba(0, 0, 0, 0.459);
 }
 /*# sourceMappingURL=mixin.css.map */
