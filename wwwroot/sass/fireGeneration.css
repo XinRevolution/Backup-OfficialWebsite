@@ -484,17 +484,21 @@
   float: none;
 }
 
-.leftHand {
-  background: url(/images/L-hand-02.png) center no-repeat;
-  background-size: 100%;
+％hand, .leftHand, .rightHand {
+  background-size: 100% !important;
   width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.leftHand {
+  background: url(/images/L-hand-02.png) center no-repeat;
 }
 
 .rightHand {
-  background: url(/images/R-hand.png);
-  background-size: cover;
-  height: 100vh;
+  background: url(/images/R-hand-02.png) center no-repeat;
+  right: 0;
 }
 
 ％concentric, .concentric, .concentric:before {

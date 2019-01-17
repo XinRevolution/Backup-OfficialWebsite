@@ -62,7 +62,8 @@
         transform: skew(-45deg);
         z-index: -1;
     }
-                // 裝備按鈕
+
+    // 裝備按鈕
     table {
         margin: auto;
 
@@ -234,19 +235,23 @@
 
 // 世界觀
 
-.leftHand {
-    background: url(/images/L-hand-02.png)center no-repeat;
-    background-size: 100%;
+％hand {
+    background-size: 100% !important;
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: -1;
+}
 
+.leftHand {
+    background: url(/images/L-hand-02.png)center no-repeat;
+    @extend ％hand;
 }
 
 .rightHand {
-    background: url(/images/R-hand.png);
-    background-size: cover;
-    height: 100vh;
-
+    background: url(/images/R-hand-02.png)center no-repeat;
+    @extend ％hand;
+    right: 0;
 }
 
 ％concentric {

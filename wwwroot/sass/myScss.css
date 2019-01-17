@@ -4001,6 +4001,35 @@ table {
   position: relative;
 }
 
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
+}
+
 .theme {
   text-align: right;
   font-size: 5rem;
@@ -4232,6 +4261,35 @@ table {
   -webkit-transform-origin: center;
           transform-origin: center;
   position: relative;
+}
+
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
 }
 
 .btn {
@@ -4609,6 +4667,35 @@ table {
   -webkit-transform-origin: center;
           transform-origin: center;
   position: relative;
+}
+
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
 }
 
 .menuDiv {
@@ -5094,6 +5181,35 @@ table {
   position: relative;
 }
 
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
+}
+
 .aboutUsDiv {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
@@ -5349,6 +5465,35 @@ table {
   -webkit-transform-origin: center;
           transform-origin: center;
   position: relative;
+}
+
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
 }
 
 .masterVision {
@@ -5698,6 +5843,35 @@ table {
   -webkit-transform-origin: center;
           transform-origin: center;
   position: relative;
+}
+
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
 }
 
 .newsImg {
@@ -6094,6 +6268,35 @@ table {
   position: relative;
 }
 
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
+}
+
 .workList {
   width: 100%;
 }
@@ -6376,6 +6579,35 @@ table {
   -webkit-transform-origin: center;
           transform-origin: center;
   position: relative;
+}
+
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
 }
 
 .issuesHeight {
@@ -6730,6 +6962,35 @@ table {
   position: relative;
 }
 
+.camera {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.camera .space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.camera .space .box {
+  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(50px) translateY(50px) rotateY(60deg);
+          transform: translateX(50px) translateY(50px) rotateY(60deg);
+  background: rgba(0, 0, 0, 0.459);
+}
+
 .character {
   position: relative;
 }
@@ -6936,17 +7197,21 @@ table {
   float: none;
 }
 
-.leftHand {
-  background: url(/images/L-hand-02.png) center no-repeat;
-  background-size: 100%;
+％hand, .leftHand, .rightHand {
+  background-size: 100% !important;
   width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.leftHand {
+  background: url(/images/L-hand-02.png) center no-repeat;
 }
 
 .rightHand {
-  background: url(/images/R-hand.png);
-  background-size: cover;
-  height: 100vh;
+  background: url(/images/R-hand-02.png) center no-repeat;
+  right: 0;
 }
 
 ％concentric, .concentric, .concentric:before {
