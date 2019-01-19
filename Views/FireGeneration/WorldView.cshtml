@@ -19,33 +19,37 @@ ul{
 <div class="js-ctrl-background h100" data-header="bright">
     <!-- <h1>world view</h1> -->
     <div class="grid-container h100 relative">
-
         <div class="column-8">
             <div class="camera">
                 <div class="space">
                     <div class="box">
+                        <!-- 分類選單 -->
                         <div class="test">
-                            <div class="btn btnSquare center gray border">
-                                世界
+                            <div class="">
+                                <div class="btn btnSquare center gray border">世界</div>
+                                <div class="">
+                                    <ul>
+                                        <li>世界 - 1</li>
+                                        <li>世界 - 2</li>
+                                        <li>世界 - 3</li>
+                                        <li>世界 - 4</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="btn btnSquare center gray border"> 場景</div>
-                            <div class="btn btnSquare center gray border"> 設定</div>
-                            <div class="btn btnSquare center gray border"> 擴充</div>
-                        </div>
-                        <div class="test">
-                            <ul>
-                                <li>test</li>
-                                <li>test</li>
-                                <li>test</li>
-                                <li>test</li>
-                            </ul>
+
+                            <div class="btn btnSquare center gray border">場景</div>
+                            
+                            <div class="btn btnSquare center gray border">設定</div>
+                            
+                            <div class="btn btnSquare center gray border">擴充</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- <div class="column-6">
+    <!-- <div class="column-6">
             <div class="btn btnSquare center gray border">
                 世界
             </div>
@@ -65,21 +69,21 @@ ul{
                 世界
             </div>
         </div> -->
-        <!-- 內容 -->
-        <div class="column-16">
-            <img src="/images/scenes.jpg" alt="">
-        </div>
-
-        <!-- 手掌 -->
-        <!-- <div class="leftHand column-8"></div>
-        <div class="rightHand pre-8 column-8"></div> -->
-
-        <!-- 準心 -->
-        <!-- <div class="concentric"></div> -->
+    <!-- 內容 -->
+    <div class="column-16">
+        <img src="/images/scenes.jpg" alt="">
     </div>
 
-    <!-- 側邊導覽列 -->
-    <partial name="_SideNavigation.cshtml" />
+    <!-- 手掌 -->
+    <!-- <div class="leftHand column-8"></div>
+        <div class="rightHand pre-8 column-8"></div> -->
+
+    <!-- 準心 -->
+    <!-- <div class="concentric"></div> -->
+</div>
+
+<!-- 側邊導覽列 -->
+<partial name="_SideNavigation.cshtml" />
 </div>
 
 @section Scripts {
