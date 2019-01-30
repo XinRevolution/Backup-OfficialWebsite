@@ -7230,6 +7230,19 @@ table {
   border: 1px solid rgba(204, 204, 204, 0.6);
 }
 
+.readSection-1 {
+  color: #fff;
+}
+
+.readSection-1 img {
+  height: 30rem;
+  margin: 0.5rem;
+}
+
+.readSection-1 p {
+  margin: 0.5rem;
+}
+
 .bgBlock {
   position: fixed;
   height: 100%;
