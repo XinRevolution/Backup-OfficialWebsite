@@ -314,14 +314,13 @@
   position: absolute;
   top: 0;
   opacity: 0;
-  height: 0;
+  width: 100%;
 }
 
 .menuDiv.menu-active {
-  opacity: 1;
-  background: #292929;
-  width: 100%;
+  opacity: 0.7;
   height: 100vh;
+  background: #292929;
   z-index: 1500;
 }
 
@@ -329,12 +328,23 @@
   height: 100%;
 }
 
-.menuDiv.menu-active nav div {
-  height: calc(100% / 4);
-  width: 100%;
+.menuDiv.menu-active nav:after {
+  margin: auto;
+  width: 1px;
+  height: 20rem;
+  background: #cccccc4a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.menuDiv.menu-active nav div a {
+.menuDiv.menu-active [class*="column-"] {
+  padding: 15% 0;
+}
+
+.menuDiv.menu-active [class*="column-"] a {
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -343,12 +353,12 @@
   width: 100%;
   display: block;
   color: #ccc;
-  font-size: 6rem;
+  font-size: 1.5rem;
   text-align: center;
-  height: 100%;
+  margin: 2.5rem 0;
 }
 
-.menuDiv.menu-active nav div a:hover, .menuDiv.menu-active nav div a:active {
+.menuDiv.menu-active [class*="column-"] a:hover, .menuDiv.menu-active [class*="column-"] a:active {
   background: #fff;
   color: #000;
 }

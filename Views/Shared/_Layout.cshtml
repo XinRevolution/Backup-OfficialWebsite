@@ -55,13 +55,18 @@
 
         <!-- 導覽區 -->
         <div class="menuDiv" id="block-menu">
-            <nav class="">
-                <div><a asp-controller="Home" asp-action="Index">Index</a></div>
-                <div><a asp-controller="Home" asp-action="News">News</a></div>
-                <div><a asp-controller="Home" asp-action="Works">Works</a></div>
-                <div><a asp-controller="Home" asp-action="Issues">Issues</a></div>
-                <!-- <div><a asp-controller="Home" asp-action="Store">Store</a></div> -->
-            </nav>
+            <nav class="grid-container ">
+                <div class="column-12 h100">
+                    <a asp-controller="Home" asp-action="Index">INDEX</a>
+                    <a asp-controller="Home" asp-action="News">NEWS</a>
+                    <a asp-controller="Home" asp-action="Works">WORKS</a>
+                    <a asp-controller="Home" asp-action="Issues">ISSUES</a>
+                    <!-- <a asp-controller="Home" asp-action="Store">Store</a>
+                 -->
+        </div>
+        <div class="column-12 h100"></div>
+
+        </nav>
         </div>
     </header>
 
@@ -71,7 +76,7 @@
             <div class="content">
                 @RenderBody()
             </div>
-            
+
             <div class="js-style-toggleable">
                 <div class="topSight"></div>
                 <div class="bottomSight">
