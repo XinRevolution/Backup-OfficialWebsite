@@ -6028,6 +6028,21 @@ table {
   height: calc((100% - 0.5rem) / 2);
 }
 
+.dateDiv ul {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.dateDiv ul li {
+  margin: 0.5rem 0;
+}
+
+.dateDiv ul li::before {
+  content: '—';
+  margin-right: 0.25rem;
+  opacity: 0.2;
+}
+
 .paper {
   position: relative;
   background: #fff;
