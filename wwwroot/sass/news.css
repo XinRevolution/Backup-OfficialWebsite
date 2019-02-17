@@ -323,7 +323,6 @@
   margin-bottom: 0.5rem;
   position: relative;
   overflow: hidden;
-  padding: 2.5rem;
 }
 
 .newsDiv.refresh:after {
@@ -345,8 +344,8 @@
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
-  width: 100%;
-  height: auto;
+  width: 30rem;
+  height: 100%;
   display: inline-block;
   opacity: 1;
   background: #292929;
@@ -355,10 +354,6 @@
 .newsDiv .newsImg img {
   display: block;
   margin: 0 auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: 100%;
 }
 
 .newsDiv .newsContent {
@@ -397,6 +392,7 @@
 .newsDiv.news-active {
   min-height: calc((100% - 0.5rem) / 2);
   height: auto;
+  padding: 2rem;
 }
 
 .newsDiv.news-active:before {
@@ -427,6 +423,20 @@
   -webkit-box-orient: initial;
 }
 
+.newsDiv.news-active .newsImg {
+  width: 100%;
+  height: auto;
+}
+
+.newsDiv.news-active .newsImg img {
+  display: block;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+
 .dateDiv {
   padding: 0.5rem;
   height: calc((100% - 0.5rem) / 2);
@@ -445,6 +455,10 @@
   content: '—';
   margin-right: 0.25rem;
   opacity: 0.2;
+}
+
+.dateDiv:first-child {
+  margin-top: 40px;
 }
 
 .paper {

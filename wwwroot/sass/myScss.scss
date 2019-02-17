@@ -214,7 +214,7 @@ footer {
     position: absolute;
     width: 1px;
     height: calc(100% + 40px);
-    // background: linear-gradient(rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.08));
+    background: linear-gradient(rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.08));
     top: -40px;
 }
 
@@ -224,7 +224,6 @@ footer {
     top: 0;
     height: 100%;
     z-index: -1;
-
 
     div {
         height: 100%;
@@ -243,6 +242,7 @@ footer {
         }
     }
 }
+
 
 // 瞄準鏡 圓圈
 

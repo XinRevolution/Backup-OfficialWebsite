@@ -5854,7 +5854,6 @@ table {
   margin-bottom: 0.5rem;
   position: relative;
   overflow: hidden;
-  padding: 2.5rem;
 }
 
 .newsDiv.refresh:after {
@@ -5876,8 +5875,8 @@ table {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
-  width: 100%;
-  height: auto;
+  width: 30rem;
+  height: 100%;
   display: inline-block;
   opacity: 1;
   background: #292929;
@@ -5886,10 +5885,6 @@ table {
 .newsDiv .newsImg img {
   display: block;
   margin: 0 auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: 100%;
 }
 
 .newsDiv .newsContent {
@@ -5928,6 +5923,7 @@ table {
 .newsDiv.news-active {
   min-height: calc((100% - 0.5rem) / 2);
   height: auto;
+  padding: 2rem;
 }
 
 .newsDiv.news-active:before {
@@ -5958,6 +5954,20 @@ table {
   -webkit-box-orient: initial;
 }
 
+.newsDiv.news-active .newsImg {
+  width: 100%;
+  height: auto;
+}
+
+.newsDiv.news-active .newsImg img {
+  display: block;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+
 .dateDiv {
   padding: 0.5rem;
   height: calc((100% - 0.5rem) / 2);
@@ -5976,6 +5986,10 @@ table {
   content: '—';
   margin-right: 0.25rem;
   opacity: 0.2;
+}
+
+.dateDiv:first-child {
+  margin-top: 40px;
 }
 
 .paper {
@@ -7382,6 +7396,8 @@ footer {
   position: absolute;
   width: 1px;
   height: calc(100% + 40px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.08)));
+  background: linear-gradient(rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.08));
   top: -40px;
 }
 
