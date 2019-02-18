@@ -9,19 +9,6 @@
   position: relative;
 }
 
-.theme::after {
-  content: "";
-  width: 21rem;
-  height: 1rem;
-  background: #f11515;
-  position: absolute;
-  right: -1rem;
-  top: 2rem;
-  z-index: -1;
-  -webkit-transform: skew(-45deg);
-          transform: skew(-45deg);
-}
-
 .border {
   border: 1px solid #d8d8d8;
   margin-bottom: 0.5rem;
