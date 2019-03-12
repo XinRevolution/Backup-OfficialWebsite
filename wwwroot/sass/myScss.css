@@ -5553,7 +5553,7 @@ table {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
-  background: url("/images/X-logo.png") no-repeat;
+  background: url("/images/X-logo.svg") no-repeat;
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -7294,7 +7294,7 @@ header div {
 }
 
 header.bright .xLogo {
-  background: url(/images/X-logo-w.png) no-repeat !important;
+  background: url(/images/X-logo-w.svg) no-repeat !important;
   background-size: contain !important;
   background-position: center !important;
 }

@@ -102,7 +102,7 @@ header {
     &.bright {
         .xLogo {
             @extend .xLogo;
-            background: url(/images/X-logo-w.png) no-repeat !important;
+            background: url(/images/X-logo-w.svg) no-repeat !important;
             background-size: contain !important;
             background-position: center !important;
         }
