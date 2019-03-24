@@ -305,6 +305,7 @@
 
 .adj {
   mix-blend-mode: difference;
+  background-image: linear-gradient(149deg, #eaeaea, #a4a4a4 29%, #4a3c3c);
   width: 100%;
   height: 100%;
   background: #fff;
