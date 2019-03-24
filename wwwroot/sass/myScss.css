@@ -7320,6 +7320,13 @@ footer {
   z-index: 1900;
 }
 
+.footerDiv:before, .footerDiv:after {
+  height: 1rem;
+  position: fixed;
+  width: 14rem;
+  bottom: 0;
+}
+
 .footerDiv {
   position: fixed;
   height: 4px;
@@ -7329,6 +7336,20 @@ footer {
   margin: 0 auto;
   right: 0;
   background: #292929;
+}
+
+.footerDiv:before {
+  content: '';
+  background: url("/images/footer-line-l.svg") no-repeat center;
+  background-size: contain;
+  left: 8rem;
+}
+
+.footerDiv:after {
+  content: '';
+  background: url("/images/footer-line-r.svg") no-repeat center;
+  background-size: contain;
+  right: 8rem;
 }
 
 .h100 {
@@ -7526,8 +7547,13 @@ footer {
 .index-circle {
   background: url("/images/index-circle.svg") no-repeat center;
   background-size: contain;
-  height: 80vh;
-  width: 100%;
+  height: 80%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  right: 0;
   position: absolute;
+  bottom: 0;
+  margin: auto;
 }
 /*# sourceMappingURL=myScss.css.map */

@@ -125,8 +125,6 @@
             @include biseauMixin(auto, auto, 0, $width, 0 $angle $angle 0, transparent transparent $black transparent);
         }
     }
-
-
     &.rightBottom {
         background: $black;
         &:before {

@@ -132,7 +132,12 @@ footer {
     right: 0;
     z-index: 1900;
 }
-
+%footerLine{
+    height: 1rem;
+    position: fixed;
+    width: 14rem;
+    bottom: 0;
+}
 .footerDiv {
     position: fixed;
     // height: 10px;
@@ -143,7 +148,24 @@ footer {
     margin: 0 auto;
     right: 0;
     background: $black;
+
+    &:before {
+        content: '';
+        background: url("/images/footer-line-l.svg") no-repeat center; 
+        background-size: contain;
+        @extend %footerLine;
+        left: 8rem;
+    }
+
+    &:after {
+        content: '';
+        background: url("/images/footer-line-r.svg") no-repeat center;
+        background-size: contain;
+        @extend %footerLine;
+        right: 8rem;
+    }
 }
+
 // custom
 .h100 {
     height: 100%;
@@ -158,17 +180,18 @@ footer {
 }
 
 .wrapper {
-    @include transition(all,0.4s,ease,0s);
+    @include transition(all, 0.4s, ease, 0s);
     height: 100vh;
     position: relative;
     overflow: hidden;
-    &.bright{
+
+    &.bright {
         background: #000;
     }
 }
 
 // 內容-區塊
-.contentDiv{
+.contentDiv {
     height: 100%;
     padding-top: calc(0.5rem + 40px);
     padding-bottom: calc(0.5rem + 40px);
@@ -179,7 +202,7 @@ footer {
 
 // 主要內容
 .content {
-    @extend .contentDiv ; 
+    @extend .contentDiv;
     width: 100%;
 
     .overflowAuto-x {
@@ -348,13 +371,19 @@ $sightPosition:-20px;
     top: 0;
     left: 0;
 }
+
 // 瞄準圈
 
-.index-circle{
+.index-circle {
     background: url("/images/index-circle.svg") no-repeat center;
     background-size: contain;
-    height: 80vh;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    right: 0;
     position: absolute;
+    bottom: 0;
+    margin: auto;
 
 }
