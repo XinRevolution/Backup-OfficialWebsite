@@ -12,3 +12,10 @@ $(function(){
     $(document).on('click', '.storyDiv a', function(event){
     });
 });
+
+
+// $(document).ready(function(){
+//   $(".wrapper").scroll(function() {
+//     $(".moon").css('top','-40%');
+//   });
+// });

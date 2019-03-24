@@ -1,30 +1,44 @@
 <style>
     .section-1 {
-        background-image: url("/images/moon.png");
+        background-image: url("/images/index.png");
     }
- .section-3 {
+
+    .section-3 {
         background-image: url("/images/X-logo.svg");
     }
 
-    .out{
+    .out {
         height: 1300px;
     }
-    .wrapper{
-        overflow: scroll;
+
+    .wrapper {
+        overflow-y: scroll;
     }
 
-.article {
-   
-    margin: 0 auto;
-    height: 400px;
-    padding: 40px;
-    font: 24px 'Arial';
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    line-height: 28px;
-}
+    .article {
+
+        margin: 0 auto;
+        height: 100vh;
+        padding: 40px;
+        font: 24px 'Arial';
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        line-height: 28px;
+    }
+
+    .test {
+        top: -20%;
+    }
+
+    .off {
+        top: -80%;
+    }
+
+    .moon {
+        transition: all 1s ease;
+    }
 </style>
 
 
@@ -40,6 +54,7 @@
             <div class="adj"></div>
             <div class="moon"></div>
             <!-- <div class="bgRed"></div> -->
+
         </div>
     </div>
     <!-- Index -->
@@ -52,7 +67,9 @@
             </nav>
             <div class="now">Index</div>
         </div>
-
+        <!-- 圓形準心 -->
+        <div class="concentric"></div>
+        <div class="index-circle"></div>
         <div>
             <h2>首頁</h2>
             <div>內容</div>

@@ -7522,4 +7522,12 @@ footer {
   top: 0;
   left: 0;
 }
+
+.index-circle {
+  background: url("/images/index-circle.svg") no-repeat center;
+  background-size: contain;
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+}
 /*# sourceMappingURL=myScss.css.map */
