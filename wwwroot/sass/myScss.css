@@ -5858,6 +5858,31 @@ table {
   overflow: hidden;
 }
 
+.newsDiv .themeTitle {
+  height: 1.8rem;
+}
+
+.newsDiv .themeTitle:before {
+  content: '';
+  background: url(/images/theme.svg) no-repeat center;
+  background-size: cover;
+  left: 0;
+  height: 2rem;
+  position: absolute;
+  width: 14rem;
+  top: 0;
+}
+
+.newsDiv .themeTitle:after {
+  content: '';
+  width: 100%;
+  height: 0.4rem;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .newsDiv.refresh:after {
   content: "";
   position: absolute;
@@ -7270,7 +7295,7 @@ table {
 }
 
 body {
-  background: #fff;
+  background: linear-gradient(149deg, #ffffff, #e2e2e2 29%, #bbb1b1);
   position: relative;
   overflow: hidden;
 }
@@ -7363,6 +7388,10 @@ footer {
 
 .relative {
   position: relative;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .wrapper {

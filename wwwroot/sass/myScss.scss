@@ -76,7 +76,7 @@
 }
 
 body {
-    background: #fff;
+    background:linear-gradient(149deg, #ffffff, #e2e2e2 29%, #bbb1b1);
     position: relative;
     overflow: hidden;
 }
@@ -177,6 +177,10 @@ footer {
 
 .relative {
     position: relative;
+}
+
+.fixed{
+    position: fixed;
 }
 
 .wrapper {

@@ -31,6 +31,31 @@
     position: relative;
     overflow: hidden;
 
+    .themeTitle {
+        height: 1.8rem;
+        &:before {
+            content: '';
+            background: url(/images/theme.svg) no-repeat center;
+            background-size: cover;
+            left: 0;
+            height: 2rem;
+            position: absolute;
+            width: 14rem;
+            top: 0;
+        }
+        &:after{
+            content: '';
+            width: 100%;
+            height: 0.4rem;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+
+
     &.refresh:after {
         content: "";
         position: absolute;
@@ -144,7 +169,6 @@
 }
 
 
-
 .dateDiv {
     @extend .border;
     padding: 0.5rem;
@@ -164,8 +188,9 @@
             }
         }
     }
-    &:first-child{
-        margin-top:40px; 
+
+    &:first-child {
+        margin-top: 40px;
     }
 }
 
