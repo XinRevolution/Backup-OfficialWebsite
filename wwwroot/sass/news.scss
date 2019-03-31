@@ -22,7 +22,8 @@
 
 .newsDiv {
     @include transition(all, 0.4s, ease, 0s);
-    background: rgba(0, 0, 0, 0.5);
+    // background: rgba(0, 0, 0, 0.5);
+    background: #262525;
     height: calc((100% - 1rem) / 3);
     margin-bottom: 0.5rem;
     // padding: 0.5rem;
@@ -33,6 +34,7 @@
 
     .themeTitle {
         height: 1.8rem;
+
         &:before {
             content: '';
             background: url(/images/theme.svg) no-repeat center;
@@ -43,7 +45,8 @@
             width: 14rem;
             top: 0;
         }
-        &:after{
+
+        &:after {
             content: '';
             width: 100%;
             height: 0.4rem;
@@ -169,28 +172,43 @@
 }
 
 
-.dateDiv {
-    @extend .border;
-    padding: 0.5rem;
-    height: calc((100% - 0.5rem) / 2);
+.dateGroup {
+    background: #262525;
 
-    ul {
-        font-size: 0.9rem;
-        padding: 0.5rem;
-
-        li {
-            margin: 0.5rem 0;
-
-            &::before {
-                content: '—';
-                margin-right: 0.25rem;
-                opacity: 0.2;
-            }
-        }
+    &:after {
+        content: '';
+        width: 100%;
+        height: 0.4rem;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
-    &:first-child {
-        margin-top: 40px;
+    .dateDiv {
+        @extend .border;
+        color: #fff;
+        padding: 0.5rem;
+        height: calc((100% - 0.5rem) / 2);
+
+        ul {
+            font-size: 0.9rem;
+            padding: 0.5rem;
+
+            li {
+                margin: 0.5rem 0;
+
+                &::before {
+                    content: '—';
+                    margin-right: 0.25rem;
+                    opacity: 0.2;
+                }
+            }
+        }
+
+        &:first-child {
+            margin-top: 40px;
+        }
     }
 }
 

@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.border, .dateDiv {
+.border, .dateGroup .dateDiv {
   border: 1px solid #d8d8d8;
   margin-bottom: 0.5rem;
 }
@@ -318,7 +318,7 @@
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
-  background: rgba(0, 0, 0, 0.5);
+  background: #262525;
   height: calc((100% - 1rem) / 3);
   margin-bottom: 0.5rem;
   position: relative;
@@ -462,27 +462,42 @@
   height: 100%;
 }
 
-.dateDiv {
+.dateGroup {
+  background: #262525;
+}
+
+.dateGroup:after {
+  content: '';
+  width: 100%;
+  height: 0.4rem;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dateGroup .dateDiv {
+  color: #fff;
   padding: 0.5rem;
   height: calc((100% - 0.5rem) / 2);
 }
 
-.dateDiv ul {
+.dateGroup .dateDiv ul {
   font-size: 0.9rem;
   padding: 0.5rem;
 }
 
-.dateDiv ul li {
+.dateGroup .dateDiv ul li {
   margin: 0.5rem 0;
 }
 
-.dateDiv ul li::before {
+.dateGroup .dateDiv ul li::before {
   content: '—';
   margin-right: 0.25rem;
   opacity: 0.2;
 }
 
-.dateDiv:first-child {
+.dateGroup .dateDiv:first-child {
   margin-top: 40px;
 }
 
