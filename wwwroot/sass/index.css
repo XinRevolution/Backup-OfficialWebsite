@@ -322,13 +322,6 @@
   bottom: 0;
 }
 
-.logoDiv {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
 .moon {
   background: url("/images/moon.png") no-repeat;
   background-size: 100%;
@@ -372,7 +365,7 @@
   background-size: 3px 3px;
 }
 
-.logo {
+.logoHeader {
   display: inline-block;
   width: calc(100% - 16rem);
   padding-top: 4px;
@@ -381,22 +374,17 @@
   height: 40px;
 }
 
-.logo .index {
+.logoHeader a {
   display: block;
   margin: auto;
   position: relative;
   float: none;
   width: 2.5rem;
   height: 100%;
+  cursor: pointer;
 }
 
-.logo .index a {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.logo .index a .xLogo {
+.logoHeader a .xLogo {
   transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -409,20 +397,28 @@
   background-position: center;
 }
 
-.logo .index a .xLogo:hover {
-  opacity: 0.6;
+.logoHeader a .xLogo:hover {
+  opacity: 0.4;
 }
 
-.logoImg {
-  position: relative;
-  margin: 20% auto;
+.logoX {
+  position: absolute;
+  margin: auto;
   display: block;
+  left: 0;
   z-index: 100;
-  width: 18%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 5rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  mix-blend-mode: difference;
 }
 
-.logoImg.icon-logo {
-  color: #fff;
+.logoX.icon-logo {
+  color: #00A9E0;
   font-size: 5rem;
 }
 /*# sourceMappingURL=index.css.map */

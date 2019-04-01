@@ -386,6 +386,7 @@
 .btn.leftTop {
   position: relative;
   padding: 0;
+  cursor: default;
   z-index: 2200;
 }
 
