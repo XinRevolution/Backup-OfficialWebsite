@@ -4,6 +4,27 @@ $gray-light:#d8d8d8;
 $lineColor:rgba(255, 255, 255, 0.4);
 $hoverWhite: rgba(255, 255, 255, 0.8);
 
+
+h1{
+  font-size: 7rem;
+}
+
+h2{
+  font-size: 5rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+h4
+{
+  font-size: 1.8rem;
+}
+
+.lighten{
+  opacity: 0.4;
+}
+
 // 主題文字
 // .theme {
 //   text-align: right;

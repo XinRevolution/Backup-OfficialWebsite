@@ -1,6 +1,11 @@
 @import 'mixin.scss';
 
 //news
+
+.blogData {
+    color: #fc5b00;
+}
+
 .newsImg {
     width: 40%;
     height: 100%;
@@ -33,7 +38,19 @@
     overflow: hidden;
 
     .themeTitle {
-        height: 1.8rem;
+        color: #fff;
+
+        .archives {
+            margin: 1rem 0;
+        }
+
+        .titleGroup {
+            margin: 4rem 0 1rem 0;
+
+            .info {
+                margin: 0.5rem 0;
+            }
+        }
 
         &:before {
             content: '';
