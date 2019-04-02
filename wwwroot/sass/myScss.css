@@ -6129,6 +6129,7 @@ h4 {
 
 .dateGroup {
   background: #262525;
+  height: calc(100% - (1rem + 80px));
 }
 
 .dateGroup:after {
