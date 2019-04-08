@@ -207,7 +207,7 @@
         @extend .border;
         color: #fff;
         padding: 0.5rem;
-        height: calc((100% - 0.5rem) / 2);
+        height: calc((100% - (1rem + 80px )) / 2);
 
         ul {
             font-size: 0.9rem;

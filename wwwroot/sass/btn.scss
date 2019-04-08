@@ -74,6 +74,21 @@
         border: 1px solid $gray-light;
     }
 
+    //tag
+    &.tag {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        margin-bottom: 0.5rem;
+
+        &:hover,
+        &:active {
+            background: $gray-light;
+            color: #000;
+
+        }
+    }
+
+
     // center
     &.center {
         text-align: center;
@@ -98,13 +113,14 @@
     &.rightTop {
         [class*="icon-"] {
             color: $black;
+
             &:hover {
                 color: $gray-light;
-         
+
             }
         }
-     
-// 右上梯形
+
+        // 右上梯形
         // background: $black;
         // &:before {
         //     @include biseauMixin(0, $width, 0, auto,0 $angle $angle 0, transparent $black transparent transparent);
@@ -120,29 +136,33 @@
 
     &.leftBottom {
         background: $black;
+
         &:after {
 
             @include biseauMixin(auto, auto, 0, $width, 0 $angle $angle 0, transparent transparent $black transparent);
         }
     }
+
     &.rightBottom {
         background: $black;
+
         &:before {
             @include biseauMixin(auto, $width, 0, auto, $angle $angle 0 0, transparent $black transparent transparent);
         }
     }
-// 十字按鈕
-&.plus{
-    z-index: 999;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    color: $black;
-    background: #fff;
-    -webkit-box-shadow: 4px 4px 7px 0px #0003;
-    box-shadow: 4px 4px 7px 0px #0003;
 
-}
+    // 十字按鈕
+    &.plus {
+        z-index: 999;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        color: $black;
+        background: #fff;
+        -webkit-box-shadow: 4px 4px 7px 0px #0003;
+        box-shadow: 4px 4px 7px 0px #0003;
+
+    }
 
 }
