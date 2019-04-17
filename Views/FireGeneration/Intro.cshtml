@@ -2,14 +2,16 @@
 <div class="js-ctrl-background" data-header="bright">
   <!-- <div class="grid-container h100 relative"></div> -->
   <!-- <h2 class="theme">Intro</h2> -->
+  <!-- 詳細介紹 -->
+  <div class="btn btnSquare center gray border column-4">詳細介紹</div>
+  <!-- 人物 -->
+  <div class="charactersBg">
+    <div class="grid-container h100 relative"> <a class="column-7 pre-17 character-01" asp-controller="FireGeneration"
+        asp-action="Character" asp-route-id="1"></a></div>
+  </div>
 
-    <!-- 人物 -->
-    <div class="charactersBg">
-      <div class="grid-container h100 relative"> <a class="column-7 pre-17 character-01" asp-controller="FireGeneration" asp-action="Character" asp-route-id="1"></a></div>
-    </div>
-
-    <!-- 側邊導覽列 -->
-    <partial name="_SideNavigation.cshtml" />
+  <!-- 側邊導覽列 -->
+  <partial name="_SideNavigation.cshtml" />
 </div>
 
 
