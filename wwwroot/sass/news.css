@@ -343,10 +343,12 @@ h4 {
   -o-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
   background: #262525;
-  height: calc((100% - 1rem) / 3);
+  height: auto;
+  padding: 2rem;
   margin-bottom: 0.5rem;
   position: relative;
   overflow: hidden;
+  color: #fff;
 }
 
 .newsDiv .themeTitle {
@@ -399,85 +401,14 @@ h4 {
   animation: a-refresh 1s ease reverse;
 }
 
-.newsDiv .newsImg {
-  transition: all 0.4s ease 0s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  width: 30rem;
-  height: 100%;
-  display: inline-block;
-  opacity: 1;
-  background: #292929;
-}
-
-.newsDiv .newsImg img {
-  display: block;
-  margin: 0 auto;
-}
-
 .newsDiv .newsContent {
-  width: calc(100% - 30rem);
-  display: inline-block;
-  padding: 0.5rem;
-}
-
-.newsDiv fieldset {
-  min-height: calc(100% - (20px + 0.5rem));
-  height: auto;
-  position: relative;
-  line-height: normal;
-}
-
-.newsDiv fieldset .news {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.newsDiv fieldset .media {
-  position: absolute;
-  bottom: 0;
-}
-
-.newsDiv .btn {
-  display: inline-block;
-  width: 5rem;
-  float: right;
-  margin-top: 0.5rem;
-}
-
-.newsDiv.news-active {
-  min-height: calc((100% - 0.5rem) / 2);
-  height: auto;
-  padding: 2rem;
-}
-
-.newsDiv.news-active:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: -100%;
-  top: 0;
-  background: black;
-  -webkit-animation: a-refresh 1s ease;
-  /* Safari 4.0 - 8.0 */
-  animation: a-refresh 1s ease;
-}
-
-.newsDiv.news-active .newsContent {
   width: 100%;
   display: inline-block;
   padding: 1rem 0;
   float: left;
-  color: #fff;
 }
 
-.newsDiv.news-active .news {
+.newsDiv .news {
   overflow: initial;
   text-overflow: initial;
   display: block;
@@ -485,18 +416,25 @@ h4 {
   -webkit-box-orient: initial;
 }
 
-.newsDiv.news-active .newsImg {
+.newsDiv .newsImg {
   width: 100%;
   height: auto;
 }
 
-.newsDiv.news-active .newsImg img {
+.newsDiv .newsImg img {
   display: block;
   margin: 0 auto;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 100%;
+}
+
+.newsDiv .btn {
+  display: inline-block;
+  width: 5rem;
+  float: right;
+  margin-top: 0.5rem;
 }
 
 .dateGroup {

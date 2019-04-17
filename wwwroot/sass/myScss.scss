@@ -99,6 +99,8 @@ header {
         float: left;
     }
 
+
+
     &.bright {
         .xLogo {
             @extend .xLogo;
@@ -112,7 +114,6 @@ header {
         .hamburger-inner::after {
             background: #fff;
         }
-
 
         .btn.rightTop {
             [class*="icon-"] {
